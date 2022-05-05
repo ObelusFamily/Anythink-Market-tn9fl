@@ -8,7 +8,7 @@
   "scripts": {
     "start": "node ./app.js",
     "dev": "nodemon ./app.js",
-    "seeds": "echo 'Please create seeds file'",
+    "seeds": "node ./seeds/items.js",
     "test": "newman run ./tests/api-tests.postman.json -e ./tests/env-api-tests.postman.json",
     "stop": "lsof -ti :3000 | xargs kill"
   },
@@ -23,10 +23,11 @@
     "express-async-handler": "^1.2.0",
     "express-jwt": "3.3.0",
     "express-session": "1.13.0",
+    "@faker-js/faker": "^6.3.1",
     "jsonwebtoken": "7.1.9",
     "method-override": "2.3.5",
     "methods": "1.1.2",
-    "mongoose": "5.12.5",
+    "mongoose": "6.3.2",
     "mongoose-unique-validator": "3.0.0",
     "morgan": "1.7.0",
     "passport": "0.3.2",
