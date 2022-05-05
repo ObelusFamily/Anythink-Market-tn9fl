@@ -34,7 +34,6 @@ async function addItems() {
     }
 };
 
-console.log(items.length);
 addItems().then(() => {
     mongoose.connection.close();
 }).then(process.exit);
