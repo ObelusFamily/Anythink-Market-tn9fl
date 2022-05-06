@@ -8,7 +8,7 @@ var ItemSchema = new mongoose.Schema(
     slug: { type: String, lowercase: true, unique: true },
     title: String,
     description: String,
-    image: { type: String, default: "https://github.com/ObelusFamily/Anythink-Market-tn9fl/blob/main/frontend/src/imgs/placeholder.png?raw=true" },
+    image: { type: String, default: "https://ibb.co/R6R3Dsc" },
     favoritesCount: { type: Number, default: 0 },
     comments: [{ type: mongoose.Schema.Types.ObjectId, ref: "Comment" }],
     tagList: [{ type: String }],
